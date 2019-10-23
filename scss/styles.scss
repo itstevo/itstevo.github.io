@@ -34,19 +34,26 @@
 */
 
 // Define base and accent colors
-$base-color: #150734;
+//top and contact page 
+$base-color: #0C0032 /*#383840*/;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #000;
-$background-alt: #3778C2;
+//menu
+$background: #59235A/*#0C0032*/;
+//experience, projects, skills
+$background-alt: #78224c/*#0C0032*/;
+//Name, downlaod resume, pulley, waypoint for timeine center, timeline text boxes, project text boxes, contact form text 
+$background-alt-2: #895061/*#190061*/;
+//about me, experience, education, skills, footer, 
+$background-alt-3: #59235A/*#282828*/;
 
-// Define border colors
-$border: #0F2557;
+// Define border colors 
+$border: #dcd9d9;
 
 // Define text colors
-$heading: #374054;
-$text: #74808a;
+$heading: #fff;
+$text: #bbb;
 
 /*
     ---------------------
@@ -237,6 +244,7 @@ header {
 
 footer {
     padding: 50px 0;
+	background: $background-alt-3;
 }
 
 .copyright {
@@ -294,15 +302,15 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #fff;
+    color: $background-alt-2 /* fff*/;
     padding: 15px 25px;
-    border: 3px solid #fff;
+    border: 3px solid $background-alt-2 /* fff*/;
     border-radius: 30px;
     @include transition();
 
     &:hover {
         color: $base-color;
-        background: #fff;
+        background: $background-alt-2 /* fff*/;
         text-decoration: none;
     }
 }
@@ -369,7 +377,7 @@ footer {
     }
 
     h1 {
-        color: #fff;
+        color: $background-alt-2 /* fff*/;
         font-weight: 900;
         font-size: 5em;
         text-transform: uppercase;
@@ -405,7 +413,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fff;
+    color: $background-alt-2 /* fff*/;
 
     span {
         cursor: pointer;
@@ -448,7 +456,7 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
-
+	background: $background-alt-3;
     h2 {
         color: $heading;
     }
@@ -507,7 +515,7 @@ footer {
 
 .vtimeline-content {
     margin-left: 350px;
-    background: #fff;
+    background: $background-alt-2 /* fff*/;
     border: 1px solid #e6e6e6;
     padding: 15px;
     border-radius: 3px;
@@ -544,7 +552,7 @@ footer {
 
 .vtimeline-icon {
     position: relative;
-    color: #fff;
+    color: $background-alt-2 /* fff*/;
     width: 50px;
     height: 50px;
     background: $base-color;
@@ -580,6 +588,7 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
+	background: $background-alt-3;
 
     h2 {
         color: $heading;
@@ -646,7 +655,7 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
+    background: $background-alt-2 /* fff*/;
     border-radius: 4px;
 }
 
@@ -697,6 +706,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+	background: $background-alt-3;
 
     h2 {
         color: $heading;
@@ -735,7 +745,7 @@ footer {
 
     h2 {
         margin: 0 0 15px 0;
-        color: #fff;
+        color: $background-alt-2 /* fff*/;
         font-weight: 500;
     }
 }
@@ -752,10 +762,10 @@ footer {
         border: none;
         margin-bottom: 10px;
         background: darken($base-color, 15%);
-        color: #fff;
+        color: $background-alt-2 /* fff*/;
         @include transition();
         @include placeholder {
-            color: #fff;
+            color: $background-alt-2 /* fff*/;
         }
 
         &:focus {
@@ -772,7 +782,7 @@ footer {
     button {
         display: block;
         width: 100%;
-        background: #fff;
+        background: $background-alt-2 /* fff*/;
         border-radius: 4px;
         padding: 5px 10px;
         border: none;
@@ -794,6 +804,7 @@ footer {
 */
 
 .optional-section {
+	
     padding: 50px 15px;
     text-align: center;
     border-top: 1px solid $border;
@@ -808,7 +819,7 @@ footer {
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid $border;
-    background: #fff;
+    background: $background-alt-2 /* fff*/;
     text-align: left;
 
     h3 {
