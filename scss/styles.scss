@@ -41,11 +41,11 @@ $base-color-hover: darken($base-color, 10%);
 // Define background colors
 //menu
 $background: #59235A/*#0C0032*/;
-//experience, projects, skills
+//experience, projects, skills, education
 $background-alt: #78224c/*#0C0032*/;
 //Name, downlaod resume, pulley, waypoint for timeine center, timeline text boxes, project text boxes, contact form text 
 $background-alt-2: #895061/*#190061*/;
-//about me, experience, education, skills, footer, 
+//about me, experience, skills, footer, 
 $background-alt-3: #59235A/*#282828*/;
 
 // Define border colors 
@@ -588,7 +588,7 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
-	background: $background-alt-3;
+	background: $background-alt-2;
 
     h2 {
         color: $heading;
